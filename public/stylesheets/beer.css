@@ -1,0 +1,64 @@
+.beer {
+  position: relative;
+  width: 96%;
+  margin: 1em 1.25em;
+  border: 1px solid #2081c3;
+  display: flex;
+  top: 0;
+  flex-direction: row;
+  border-radius: 0.25em;
+  padding: 1em;
+  color: white;
+  background-color: #2081c3;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.4s, color 0.1s, top ease 0.2s;
+}
+
+.beer:hover {
+  color: #2081c3;
+  background: white;
+  top: -10px;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 4em;
+  margin-left: 1em;
+}
+
+.data p,
+.data li {
+  font-size: 1.4em;
+}
+
+.beer h3 {
+  font-size: 4em;
+  margin: 0px;
+  padding: 0px;
+  line-height: 1em;
+}
+
+.beer h4 {
+  font-size: 2em;
+}
+
+.tagline {
+  margin-bottom: 1em;
+  font-style: italic;
+}
+
+.description {
+  margin-bottom: 1em;
+}
+
+.beer img {
+  width: 8em;
+  margin-left: 4em;
+}
+
+.beer ul {
+  margin-left: 2em;
+}

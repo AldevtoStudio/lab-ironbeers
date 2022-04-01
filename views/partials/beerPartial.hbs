@@ -1,0 +1,24 @@
+<a class="beer" {{#is @root.selected 'Beers'}} href='/beers/{{id}}' {{else}}{{#is @root.selected 'Random Beer'}} href='/beers/{{id}}' {{else}} href='#' style='pointer-events: none; cursor: default;' {{/is}}{{/is}}> 
+    <img src='{{image_url}}' alt='{{name}}' />
+    <div class="data">
+      <h3>{{name}}</h3>
+      <p class="tagline">{{tagline}}</p>
+      <p class="description">{{description}}</p>
+
+      {{#is @root.selected 'Beers'}}
+        {{else}}
+            <h4>Food Pairing</h4>
+            <ul>
+              {{#each food_pairing}}
+              <li>{{this}}</li>
+              {{/each}}
+            </ul>
+            <h4>Brewers Tips:</h4>
+            <p>{{brewers_tips}}</p>
+      {{/is}}
+    </div>
+</a>
+
+ 
+
+ 

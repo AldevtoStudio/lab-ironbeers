@@ -1,0 +1,50 @@
+.beers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.beer {
+  position: relative;
+  width: 33%;
+  flex: 0 0 31.25em;
+  margin: 1em 1.25em;
+  border: 1px solid #2081c3;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 0.25em;
+  padding: 1em;
+  color: white;
+  background-color: #2081c3;
+  transition: background 0.4s, color 0.1s, top ease 0.2s;
+}
+
+.beer:hover {
+  color: #2081c3;
+  background: white;
+  top: -10px;
+}
+
+.beer h3 {
+  font-size: 1.5em;
+}
+
+.tagline {
+  margin-bottom: 1em;
+  font-style: italic;
+}
+
+.beer img {
+  width: 4em;
+  margin-left: 4em;
+}
+
+.beer ul {
+  margin-left: 1em;
+}
+
+.beer h4 {
+  margin-top: 1em;
+}

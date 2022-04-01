@@ -1,0 +1,14 @@
+<img src='/images/beer.png' alt='Beer logo.'>
+<nav>
+      <ul>
+        <li>
+          <a {{#is @root.selected 'Home'}} class='active'{{else}}{{/is}} href='/'>Home</a>
+        </li>
+        <li>
+          <a {{#is @root.selected 'Beers'}} class='active'{{else}}{{/is}} href='/beers'>Beers</a>
+        </li>
+        <li>
+          <a {{#is @root.selected 'Random Beer'}} class='active'{{else}}{{/is}} href='/random-beer'>Random Beer</a>
+        </li>
+      </ul>
+</nav>

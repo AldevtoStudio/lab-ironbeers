@@ -1,0 +1,29 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero img {
+  width: 16em;
+}
+
+.hero > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.hero a {
+  margin: 1em;
+  padding: 0.6em;
+  border: 1px solid #2081c3;
+  border-radius: 0.25em;
+  color: white;
+  background-color: #2081c3;
+  transition: background 0.4s, color 0.1s;
+}
+
+.hero a:hover {
+  color: #2081c3;
+  background: white;
+}
