@@ -15,7 +15,7 @@ const punkAPI = new PunkAPIWrapper();
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
-// Creating the middleware function that servers statis files on requests.
+// Creating the middleware function that servers static files on requests.
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Default page title
